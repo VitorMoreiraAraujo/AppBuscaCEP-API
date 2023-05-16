@@ -7,27 +7,16 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <EditText
+        android:id="@+id/txtCep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/txtCep"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:digits="0123456789"
-            android:hint="Insira seu CEP"
-            android:inputType="number"
-            android:textColor="#595959"
-            android:textSize="25sp" />
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="C" />
-
-    </LinearLayout>
+        android:digits="0123456789"
+        android:hint="Insira seu CEP"
+        android:inputType="number"
+        android:textColor="#595959"
+        android:textSize="25sp" />
 
 
     <LinearLayout
@@ -51,62 +40,131 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:orientation="horizontal">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Endereço: "
-        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço: "
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/lblCEP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        <EditText
+            android:id="@+id/lblCEP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
     </LinearLayout>
-    <TextView
-        android:id="@+id/lblLogradouro"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
 
-    <TextView
-        android:id="@+id/lblComplemento"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logradouro: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/lblLogradouro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
 
-    <TextView
-        android:id="@+id/lblBairro"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complemento: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/lblComplemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
 
-    <TextView
-        android:id="@+id/lblCidade"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairro: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/lblBairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
 
-    <TextView
-        android:id="@+id/lblEstado"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cidade: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/lblCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </LinearLayout>
