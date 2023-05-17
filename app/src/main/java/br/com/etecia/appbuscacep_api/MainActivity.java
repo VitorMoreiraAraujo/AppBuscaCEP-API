@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -32,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         //lblEstado = findViewById(R.id.lblEstado);
         btnBuscarCep = findViewById(R.id.btnBuscaCep);
         spinner = findViewById(R.id.spinnerEstado);
+
+        String [] estado = getResources().getStringArray(R.array.estados_array);
+
+        spinner.setAdapter( new ArrayAdapter<String>(getApplicationContext(), R.layout.activity_main, estado));
 
         btnBuscarCep.setOnClickListener(new View.OnClickListener() {
             @Override
