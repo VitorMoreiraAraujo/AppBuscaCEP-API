@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         lblComplemento = findViewById(R.id.lblComplemento);
         lblBairro = findViewById(R.id.lblBairro);
         lblCidade = findViewById(R.id.lblCidade);
-        //lblEstado = findViewById(R.id.lblEstado);
+        lblEstado = findViewById(R.id.lblEstado);
         btnBuscarCep = findViewById(R.id.btnBuscaCep);
         spinner = findViewById(R.id.spinnerEstado);
 
