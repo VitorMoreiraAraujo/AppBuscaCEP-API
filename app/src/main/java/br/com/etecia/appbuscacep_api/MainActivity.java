@@ -15,7 +15,7 @@ import java.util.concurrent.ExecutionException;
 public class MainActivity extends AppCompatActivity {
 
     Button btnBuscarCep;
-    EditText txtCep, lblCEP, lblLogradouro, lblComplemento, lblBairro, lblCidade, lblEstado;
+    EditText txtCep, lblCEP, lblLogradouro, lblComplemento, lblBairro, lblCidade;
 
     Spinner spinner;
 
@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         lblComplemento = findViewById(R.id.lblComplemento);
         lblBairro = findViewById(R.id.lblBairro);
         lblCidade = findViewById(R.id.lblCidade);
-        lblEstado = findViewById(R.id.lblEstado);
+
         btnBuscarCep = findViewById(R.id.btnBuscaCep);
-        spinner = findViewById(R.id.spinnerEstado);
+        //spinner = findViewById(R.id.spinnerEstado);
 
-        String [] estado = getResources().getStringArray(R.array.estados_array);
+        //String [] estado = getResources().getStringArray(R.array.estados_array);
 
-        spinner.setAdapter( new ArrayAdapter<String>(getApplicationContext(), R.layout.activity_main, estado));
+        //spinner.setAdapter( new ArrayAdapter<String>(getApplicationContext(), R.layout.activity_main, estado));
 
         btnBuscarCep.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     lblComplemento.setText(retorno.getComplemento().toString());
                     lblBairro.setText(retorno.getBairro().toString());
                     lblCidade.setText(retorno.getLocalidade().toString());
-                    lblEstado.setText(retorno.getUf().toString());
+                    //spinner.setText(retorno.getUf().toString());
 
 
                 } catch (ExecutionException e) {

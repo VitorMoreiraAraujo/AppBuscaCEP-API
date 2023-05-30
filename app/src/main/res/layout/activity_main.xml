@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="50dp"
+    android:padding="5dp"
     tools:context=".MainActivity">
 
 
-  <com.google.android.material.appbar.MaterialToolbar
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:navigationIcon="@drawable/baseline_arrow_back"
-
-      />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="50dp">
+        android:padding="10dp">
 
-    <EditText
-        android:id="@+id/txtCep"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:digits="0123456789"
-        android:hint="Insira seu CEP"
-        android:inputType="number"
-        android:textColor="#595959"
-        android:textSize="25sp" />
-</LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back"
+            android:layout_margin="7dp"/>
+
+        <EditText
+            android:id="@+id/txtCep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="Insira seu CEP"
+            android:inputType="number"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             android:id="@+id/btnBuscaCep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
             android:text="Buscar CEP"
@@ -61,12 +61,13 @@
         <EditText
             android:id="@+id/lblCEP"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
+            android:background="@drawable/dialog_background"
+            android:inputType="number"
             android:padding="5dp"
             android:text="Endereço: "
             android:textColor="#858383"
-            android:background="@drawable/dialog_background"
             android:textSize="19sp" />
 
     </LinearLayout>
@@ -78,17 +79,16 @@
         android:orientation="horizontal">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Logradouro: "
             android:id="@+id/lblLogradouro"
-            android:textSize="19sp"
-            android:textColor="#858383"
-            android:background="@drawable/dialog_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
+            android:background="@drawable/dialog_background"
+            android:inputType="text"
             android:padding="5dp"
-            />
-
+            android:text="Logradouro: "
+            android:textColor="#858383"
+            android:textSize="19sp" />
 
 
     </LinearLayout>
@@ -100,16 +100,16 @@
         android:orientation="horizontal">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Complemento: "
             android:id="@+id/lblComplemento"
-            android:textSize="19sp"
-            android:textColor="#858383"
-            android:background="@drawable/dialog_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
+            android:background="@drawable/dialog_background"
+            android:inputType="text"
             android:padding="5dp"
-            />
+            android:text="Complemento: "
+            android:textColor="#858383"
+            android:textSize="19sp" />
 
 
     </LinearLayout>
@@ -122,16 +122,15 @@
         android:orientation="horizontal">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bairro: "
             android:id="@+id/lblBairro"
-            android:background="@drawable/dialog_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
+            android:background="@drawable/dialog_background"
             android:padding="5dp"
-            android:textSize="19sp"
+            android:text="Bairro: "
             android:textColor="#858383"
-            />
+            android:textSize="19sp" />
 
 
     </LinearLayout>
@@ -145,13 +144,13 @@
         <EditText
             android:id="@+id/lblCidade"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cidade"
-            android:background="@drawable/dialog_background"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
+            android:background="@drawable/dialog_background"
             android:padding="5dp"
-            android:textSize="19sp"
+            android:text="Cidade"
             android:textColor="#858383"
+            android:textSize="19sp"
 
             />
     </LinearLayout>
@@ -161,28 +160,20 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:orientation="horizontal">
- <EditText
-        android:text="Estado:"
-        android:id="@+id/lblEstado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-     android:background="@drawable/dialog_background"
-        android:textColor="#6C6969"
-        android:textSize="20sp" />
 
 
         <Spinner
             android:id="@+id/spinnerEstado"
-            android:background="@drawable/dialog_background"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
+
+            android:padding="5dp"
             android:textColor="#858383"
             android:textSize="19sp"
-            android:padding="5dp"
 
             />
+        -->
 
 
     </LinearLayout>
@@ -194,27 +185,30 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:layout_weight="3"
             android:padding="10dp"
             android:text="Alterar"
-            android:textSize="20dp"/>
+            android:textSize="18dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:layout_weight="3"
             android:padding="10dp"
             android:text="Excluir"
-            android:textSize="20dp"/>
+            android:textSize="18dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:layout_weight="3"
             android:padding="10dp"
             android:text="Limpar"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
     </LinearLayout>
 </LinearLayout>
