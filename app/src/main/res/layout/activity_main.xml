@@ -66,7 +66,7 @@
             android:background="@drawable/dialog_background"
             android:inputType="number"
             android:padding="5dp"
-            android:text="Endereço: "
+            android:hint="Endereço: "
             android:textColor="#858383"
             android:textSize="19sp" />
 
@@ -86,7 +86,7 @@
             android:background="@drawable/dialog_background"
             android:inputType="text"
             android:padding="5dp"
-            android:text="Logradouro: "
+            android:hint="Logradouro: "
             android:textColor="#858383"
             android:textSize="19sp" />
 
@@ -107,7 +107,7 @@
             android:background="@drawable/dialog_background"
             android:inputType="text"
             android:padding="5dp"
-            android:text="Complemento: "
+            android:hint="Complemento: "
             android:textColor="#858383"
             android:textSize="19sp" />
 
@@ -128,7 +128,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/dialog_background"
             android:padding="5dp"
-            android:text="Bairro: "
+            android:hint="Bairro: "
             android:textColor="#858383"
             android:textSize="19sp" />
 
@@ -148,7 +148,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/dialog_background"
             android:padding="5dp"
-            android:text="Cidade"
+            android:hint="Cidade"
             android:textColor="#858383"
             android:textSize="19sp"
 
@@ -165,15 +165,14 @@
         <Spinner
             android:id="@+id/spinnerEstado"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_margin="10dp"
-
+            android:textAlignment="center"
             android:padding="5dp"
             android:textColor="#858383"
             android:textSize="19sp"
 
             />
-        -->
 
 
     </LinearLayout>
@@ -186,7 +185,7 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="5dp"
             android:layout_weight="3"
             android:padding="10dp"
